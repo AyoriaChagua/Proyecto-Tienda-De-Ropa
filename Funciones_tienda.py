@@ -1,4 +1,5 @@
 from tabulate import tabulate
+
 tabla_tienda = []
 
 
@@ -59,12 +60,17 @@ def split_input(cls, user_inp):
     cls.item_quantity = int(vals[1])
 
 
+venta = []
+compra_tienda = []
+list_compra = []
+
+
 def print_table(data):
     print(tabulate(data, headers="keys", tablefmt="grid"))
 
 
 def eliminar_prenda_tienda():
     print("Quitando prenda...")
-    cod = int(input("Ingrese el codigo de la prenda a eliminar: "))
+    cod = int(input("Ingrese el codigo(numero del array) de la prenda a eliminar: "))
     tabla_tienda.pop(cod)
     print_table_tienda(tabla_tienda)

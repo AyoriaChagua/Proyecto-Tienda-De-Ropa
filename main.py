@@ -111,3 +111,4 @@ while True:
                 continuar = input("\npresione ENTER para continuar y volver a intentarlo: ")
     elif eleccion == "c":
         print("\nHASTA LUEGO! vuelva pronto ☻")
+        break
